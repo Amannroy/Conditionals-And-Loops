@@ -1,0 +1,131 @@
+Q1. What are conditional statements? Explain conditional statements with syntax and examples.
+
+Ans- Conditional statements are programming constructs that allow the execution of different blocks of code based on whether a specified condition evaluates to true or false. These statements help control the flow of a program, enabling it to make decisions and choose different paths based on the given conditions.
+
+If statement:
+
+Syntax:
+if (condition) {
+    // Code block to execute if the condition is true
+}
+
+
+let num = 15;
+
+if (num > 10) {
+    console.log("The number is greater than 10.");
+}
+
+
+If-else statement:
+
+Syntax:
+if (condition) {
+    // Code block to execute if the condition is true
+} else {
+    // Code block to execute if the condition is false
+}
+
+let num = 5;
+
+if (num > 10) {
+    console.log("The number is greater than 10.");
+} else {
+    console.log("The number is not greater than 10.");
+}
+
+
+If-else if-else statement:
+
+Syntax:
+if (condition1) {
+    // Code block to execute if condition1 is true
+} else if (condition2) {
+    // Code block to execute if condition2 is true
+} else {
+    // Code block to execute if none of the conditions is true
+}
+
+let num = 5;
+
+if (num > 10) {
+    console.log("The number is greater than 10.");
+} else if (num === 10) {
+    console.log("The number is equal to 10.");
+} else {
+    console.log("The number is less than 10.");
+}
+
+Q3. What are loops, and what do we need them? Explain different types of loops with their syntax and
+examples.
+
+Ans- Loops are programming constructs that allow the repeated execution of a block of code until a certain condition is met. They are essential for automating repetitive tasks and iterating over a sequence of values or elements in data structures. Loops help in reducing redundancy and making the code more concise and efficient.
+
+For Loop:
+
+Syntax:
+
+for (initialization; condition; iteration) {
+    // Code block to be executed in each iteration
+}
+
+
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+While Loop:
+
+Syntax:
+while (condition) {
+    // Code block to be executed as long as the condition is true
+}
+
+let i = 1;
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
+
+
+Do-While Loop:
+
+Syntax:
+do {
+    // Code block to be executed at least once
+} while (condition);
+
+
+let i = 1;
+do {
+    console.log(i);
+    i++;
+} while (i <= 5);
+
+
+For...of Loop (ES6+):
+
+Syntax:
+for (variable of iterable) {
+    // Code block to be executed for each element in the iterable
+}
+
+const numbers = [1, 2, 3, 4, 5];
+for (const num of numbers) {
+    console.log(num);
+}
+
+For...in Loop:
+
+Syntax:
+for (variable in object) {
+    // Code block to be executed for each property in the object
+}
+
+
+const person = { name: 'John', age: 25, gender: 'Male' };
+for (const key in person) {
+    console.log(key, person[key]);
+}
+
+Loops are crucial for handling repetitive tasks, such as processing arrays, iterating over objects, and executing a block of code multiple times. They help improve code efficiency, readability, and maintainability by reducing redundancy and allowing for dynamic control flow. 
